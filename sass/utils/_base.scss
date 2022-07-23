@@ -18,11 +18,12 @@ h4 {
 
 input {
     border: 0 none;
+    &:focus {
+        outline: none;
+    }
 }
 
-input:focus {
-    outline: none;
-}
+
 
 h1,
 h2,
@@ -45,6 +46,12 @@ p {
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--hover-backgroundcolor);
+    }
 }
 img {
     display: block;
@@ -69,4 +76,9 @@ img {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+    .page-header & {
+        display: flex;
+        align-items: center;
+    }
 }

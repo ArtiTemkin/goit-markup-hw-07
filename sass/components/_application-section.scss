@@ -1,5 +1,6 @@
 .application-section {
     padding-bottom: 94px;
+    
 }
 
 .application-section__list {
@@ -8,10 +9,10 @@
 
 .application-section__item {
     position: relative;
-}
 
-.application-section__item:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .application-section__cards-overlay {
@@ -26,7 +27,7 @@
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-.application-section__description {
+.application-section__card-description {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
